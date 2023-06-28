@@ -11,7 +11,7 @@ def create_registry_entries(name, option_name, icon, command):
 @="{option_name}"
 "Icon"="{icon}"
 
-[HKEY_CLASSES_ROOT\\*\\shell\\test\\command]
+[HKEY_CLASSES_ROOT\\*\\shell\\{name}\\command]
 @="{command}"
 """)
     file.close()
